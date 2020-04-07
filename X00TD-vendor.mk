@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -72,6 +72,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:system/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
     vendor/asus/X00TD/proprietary/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:system/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
     vendor/asus/X00TD/proprietary/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
+    vendor/asus/X00TD/proprietary/framework/vendor.qti.hardware.factory-V1.0-java.jar:system/framework/vendor.qti.hardware.factory-V1.0-java.jar \
     vendor/asus/X00TD/proprietary/framework/vendor.qti.hardware.soter-V1.0-java.jar:system/framework/vendor.qti.hardware.soter-V1.0-java.jar \
     vendor/asus/X00TD/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
     vendor/asus/X00TD/proprietary/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:system/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
@@ -105,6 +106,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/asus/X00TD/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/asus/X00TD/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
+    vendor/asus/X00TD/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
+    vendor/asus/X00TD/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
+    vendor/asus/X00TD/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/asus/X00TD/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/asus/X00TD/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
     vendor/asus/X00TD/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
@@ -135,6 +139,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib/vendor.qti.gnss@2.1.so:system/lib/vendor.qti.gnss@2.1.so \
     vendor/asus/X00TD/proprietary/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:system/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
     vendor/asus/X00TD/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
+    vendor/asus/X00TD/proprietary/lib/vendor.qti.hardware.factory@1.0.so:system/lib/vendor.qti.hardware.factory@1.0.so \
+    vendor/asus/X00TD/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
     vendor/asus/X00TD/proprietary/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:system/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
     vendor/asus/X00TD/proprietary/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:system/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
     vendor/asus/X00TD/proprietary/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:system/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
@@ -173,6 +179,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/asus/X00TD/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/asus/X00TD/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
+    vendor/asus/X00TD/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
+    vendor/asus/X00TD/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
+    vendor/asus/X00TD/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/asus/X00TD/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/asus/X00TD/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/asus/X00TD/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
@@ -189,6 +198,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib64/vendor.qti.gnss@2.1.so:system/lib64/vendor.qti.gnss@2.1.so \
     vendor/asus/X00TD/proprietary/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:system/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
     vendor/asus/X00TD/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
+    vendor/asus/X00TD/proprietary/lib64/vendor.qti.hardware.factory@1.0.so:system/lib64/vendor.qti.hardware.factory@1.0.so \
+    vendor/asus/X00TD/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
     vendor/asus/X00TD/proprietary/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:system/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
     vendor/asus/X00TD/proprietary/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:system/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
     vendor/asus/X00TD/proprietary/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:system/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
@@ -281,6 +292,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/asus/X00TD/proprietary/vendor/bin/myftm:$(TARGET_COPY_OUT_VENDOR)/bin/myftm \
     vendor/asus/X00TD/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
+    vendor/asus/X00TD/proprietary/vendor/bin/nvram_btwifi:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_btwifi \
     vendor/asus/X00TD/proprietary/vendor/bin/nvram_country:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_country \
     vendor/asus/X00TD/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/asus/X00TD/proprietary/vendor/bin/pktlogconf:$(TARGET_COPY_OUT_VENDOR)/bin/pktlogconf \
@@ -2666,7 +2678,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtwifi_ulp_adaptor.so \
     vendor/asus/X00TD/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/asus/X00TD/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
-    vendor/asus/X00TD/proprietary/vendor/lib/modules/qca_cld3/qca_cld3_wlan.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/qca_cld3/qca_cld3_wlan.ko \
     vendor/asus/X00TD/proprietary/vendor/lib/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci_nxp.so \
     vendor/asus/X00TD/proprietary/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so \
     vendor/asus/X00TD/proprietary/vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcdrm/playready/lib/libtzplayready_customer.so \
@@ -3073,6 +3084,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/libthermalioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalioctl.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress_vendor.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/asus/X00TD/proprietary/vendor/lib64/libts_detected_face_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libts_detected_face_hal.so \
